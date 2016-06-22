@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var koolLogo: UIImageView!
+    @IBOutlet weak var koolBG: UIImageView!
+    @IBOutlet weak var notKoolButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func MakeKool(sender: AnyObject) {
+        koolLogo.hidden = false
+        koolBG.hidden = false
+        notKoolButton.hidden = true
+    }
 
 }
 
